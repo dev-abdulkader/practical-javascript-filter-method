@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<meta name="robots" content="noindex" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter method</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="filter-sidebar">
+        <h2>Filter Products</h2>
+        <div class="filter-group">
+          <label for="price">Price Range</label>
+          <ul class="price-options">
+            <li>
+              <input type="radio" id="all" name="price" value="all" checked />
+              <label for="all">All</label>
+            </li>
+            <li>
+              <input type="radio" id="under-50" name="price" value="0-50" />
+              <label for="under-50">Under $50</label>
+            </li>
+            <li>
+              <input type="radio" id="50-100" name="price" value="50-100" />
+              <label for="50-100">$50 - $100</label>
+            </li>
+            <li>
+              <input type="radio" id="100-200" name="price" value="100-200" />
+              <label for="100-200">$100 - $200</label>
+            </li>
+            <li>
+              <input type="radio" id="200-plus" name="price" value="200+" />
+              <label for="200-plus">Over $200</label>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="product-container"></section>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
